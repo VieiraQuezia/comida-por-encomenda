@@ -11,8 +11,10 @@ function Header() {
     return (
         <>
             <header className="headerBox">
-                <h1><Link to='/'>Pizzaria Manoel</Link></h1>
+                
 
+                  <h1><Link to='/'>Pizzaria Manoel</Link></h1>
+                
                
             </header>
             
