@@ -38,7 +38,7 @@ function Contato() {
 
   return (
     <div>
-      <h2>Formulário de Contato</h2>
+      <h2>Formulário de contato</h2>
 
       <form onSubmit={handleSubmit}>
         <h3> Digite seu nome: </h3>
