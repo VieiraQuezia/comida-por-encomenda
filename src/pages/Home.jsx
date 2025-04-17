@@ -18,14 +18,13 @@ function Home() {
         </nav>
       </nav>
 
-      
+
       <Navbar />
 
 
       <center>
         <main>
           <article className="historia">
-            <img src={img} alt="" />
             <div className="hist">
               <h2>Conheça a História da Pizzaria Manoel</h2>
               <p>
