@@ -10,13 +10,15 @@ function Header() {
   
     return (
         <>
-            <header className="headerBox">
+            <header >
                 
 
-                  <h1><Link to='/'>Pizzaria Manoel</Link></h1>
+                <h1><Link className="" to='/'>Pizzaria Manoel</Link></h1>
                 
-               
+           
             </header>
+
+          
             
            
         </>

@@ -12,8 +12,11 @@ function Navbar() {
       <a href="#Detalhe3" className="pizza-link pizza3">
         Pizza de Quatro Queijos
       </a>
+
+
     </nav>
   );
 }
 
 export default Navbar;
+
