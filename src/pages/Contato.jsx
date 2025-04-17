@@ -35,8 +35,8 @@ function Contato() {
           required
         />
         <button type="button" onClick={() => setNome("")}>
-          {" "}
-          Limpar{" "}
+          
+          Limpar
         </button>
         <p>Seu nome: {nome}</p>
 
