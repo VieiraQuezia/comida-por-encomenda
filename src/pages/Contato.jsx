@@ -3,22 +3,12 @@ import "./contato.css"; // Importe o CSS para estilização
 import Header from "../components/header/Header";
 
 function Contato() {
-  const [nome, setNome] = useState(() =>
-    JSON.parse(localStorage.getItem("nome") || "")
-  );
-  const [email, setEmail] = useState(() =>
-    JSON.parse(localStorage.getItem("email") || "")
-  );
-  const [erro, setErro] = useState();
-  const [sexo, setSexo] = useState(() =>
-    JSON.parse(localStorage.getItem("sexo") || "")
-  );
-  const [escolaridade, setEscolaridade] = useState(() =>
-    JSON.parse(localStorage.getItem("escolaridade") || "")
-  );
-  const [telefone, setTelefone] = useState(() =>
-    JSON.parse(localStorage.getItem("telefone") || "")
-  );
+  const [nome, setNome] = useState(() => localStorage.getItem("nome") || "");
+  const [email, setEmail] = useState(() => localStorage.getItem("email") || "");
+  const [erro, setErro] = useState("");
+  const [sexo, setSexo] = useState(() => localStorage.getItem("sexo") || "");
+  const [escolaridade, setEscolaridade] = useState(() => localStorage.getItem("escolaridade") || "");
+  const [telefone, setTelefone] = useState(() => localStorage.getItem("telefone") || "");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,15 +18,10 @@ function Contato() {
     }
 
     // Salva os dados no localStorage
-    localStorage.setItem("nome", JSON.stringify(nome));
-    localStorage.setItem("email", JSON.stringify(email));
-    localStorage.setItem("sexo", JSON.stringify(sexo));
-    localStorage.setItem("escolaridade", JSON.stringify(escolaridade));
-    localStorage.setItem("telefone", JSON.stringify(telefone));
+    const dados = { nome, email, sexo, escolaridade, telefone };
+    Object.keys(dados).forEach(key => localStorage.setItem(key, dados[key]));
 
-    alert(
-      `Formulário enviado!`
-    );
+    alert("Formulário enviado!");
 
     // Limpa todos os campos do formulário
     setNome("");
@@ -102,7 +87,7 @@ function Contato() {
 
         <h3>Telefone:</h3>
         <input
-          type="number"
+          type="tel"
           placeholder="Digite seu telefone"
           value={telefone}
           onChange={(e) => setTelefone(e.target.value)}
