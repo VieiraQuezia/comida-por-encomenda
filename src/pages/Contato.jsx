@@ -7,8 +7,12 @@ function Contato() {
   const [email, setEmail] = useState(() => localStorage.getItem("email") || "");
   const [erro, setErro] = useState("");
   const [sexo, setSexo] = useState(() => localStorage.getItem("sexo") || "");
-  const [escolaridade, setEscolaridade] = useState(() => localStorage.getItem("escolaridade") || "");
-  const [telefone, setTelefone] = useState(() => localStorage.getItem("telefone") || "");
+  const [escolaridade, setEscolaridade] = useState(
+    () => localStorage.getItem("escolaridade") || ""
+  );
+  const [telefone, setTelefone] = useState(
+    () => localStorage.getItem("telefone") || ""
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,8 +22,11 @@ function Contato() {
     }
 
     // Salva os dados no localStorage
-    const dados = { nome, email, sexo, escolaridade, telefone };
-    Object.keys(dados).forEach(key => localStorage.setItem(key, dados[key]));
+    localStorage.setItem("nome", JSON.stringify(nome));
+    localStorage.setItem("email", JSON.stringify(email));
+    localStorage.setItem("sexo", JSON.stringify(sexo));
+    localStorage.setItem("escolaridade", JSON.stringify(escolaridade));
+    localStorage.setItem("telefone", JSON.stringify(telefone));
 
     alert("Formulário enviado!");
 
