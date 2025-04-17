@@ -42,14 +42,13 @@ nav {
 }
 
 .pizza1 {
-  background-image: url('../../../public/margarita.png');
+  background-image: url('/margarita.png');
 }
 
 .pizza2 {
-  background-image: url('../../../public/peperoni.png');
+  background-image: url('/peperoni.png');
 }
 
 .pizza3 {
-  background-image: url('../../../public/quatroQueijos.png');
-
+  background-image: url('/quatroQueijos.png');
 }
