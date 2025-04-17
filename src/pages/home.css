@@ -43,3 +43,15 @@
   width: 60%;
   background-color: #3c3f41;
 }
+
+
+.header{
+    background-image:url(../../../public/background.jpg) ;
+    background-size:cover; 
+   padding: 15%;
+   
+}
+
+.text{
+    padding-left: 60%;
+}

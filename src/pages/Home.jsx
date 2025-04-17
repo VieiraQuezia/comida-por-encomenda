@@ -12,6 +12,15 @@ function Home() {
   return (
     <>
       <Header />
+      <nav className="header">
+        <nav className="text">
+        <h3>Nossas Pizza</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi exercitationem quaerat, vel velit quisquam illum facilis commodi omnis natus. Dicta dolore eveniet, eos unde ullam perferendis perspiciatis alias! Praesentium, quos?</p>
+    
+        </nav>
+
+    
+      </nav>
       <Navbar />
 
       <main>
