@@ -1,39 +1,58 @@
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f8f8f8;
-    padding: 10px;
-  }
-  
-  .pizza-link {
-    width: 100px;
-    height: 100px;
-    display: block;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    animation: rotate 5s linear infinite;
-  }
-  
-  .pizza1 {
-    background-image: url('../../../public/margarita.png'); 
-  }
-  
-  .pizza2 {
-    background-image: url('../../../public/peperoni.png'); 
-  }
-  
-  .pizza3 {
-    background-image: url('../../../public/quatroQueijos.png'); 
-  }
-  
-  
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10vw;
+  align-items: flex-start;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.pizza-item {
+  text-align: center;
+  max-width: 200px;
+  justify-content: space-around;
+  gap: 10vw;
+}
+
+.pizza-item h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+.pizza-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.pizza-link {
+  width: 150px;
+  height: 150px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+
+.pizza1 {
+  background-image: url('../../../public/margarita.png');
+}
+
+.pizza2 {
+  background-image: url('../../../public/peperoni.png');
+}
+
+.pizza3 {
+  background-image: url('../../../public/quatroQueijos.png');
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3612c5972d31e3162b7370eacd49ae183d54d275
+}
