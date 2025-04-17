@@ -2,6 +2,22 @@
 body {
   background-color: #f5efef;
 }
+.contact{
+    background-color: #92170b;
+    padding: 3% 5% 3% 5%;
+
+    a{
+        text-decoration: none;
+color: #f4d8a1;
+    }
+}
+
+.contact a :hover{
+    background-color: #f4d8a1;
+    color: #92170b;
+    transition: 0.5s;   
+}
+
 
 .historia {
   /* Estilização */

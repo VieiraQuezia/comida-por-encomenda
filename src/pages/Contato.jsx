@@ -1,4 +1,6 @@
 import { useState } from "react";
+import './contato.css'; // Importe o CSS para estilização
+import Header from "../components/header/Header";
 
 function Contato() {
   const [nome, setNome] = useState("");
@@ -7,7 +9,6 @@ function Contato() {
   const [sexo, setSexo] = useState("");
   const [escolaridade, setEscolaridade] = useState("");
   const [telefone, setTelefone] = useState("");
-  const [opcao, setOpcao] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,18 +16,39 @@ function Contato() {
       setErro("Por favor, insira um e-mail válido.");
       return;
     }
+
+    // Cria um objeto com os dados do formulário
+    const dadosFormulario = {
+      nome,
+      email,
+      sexo,
+      escolaridade,
+      telefone,
+    };
+
+    // Salva os dados no localStorage
+    localStorage.setItem("dadosContato", JSON.stringify(dadosFormulario));
+
     alert(
       `Formulário enviado!\nNome: ${nome}\nEmail: ${email}\nSexo: ${sexo}\nEscolaridade: ${escolaridade}`
     );
-    setErro("");
+
+    // Limpa todos os campos do formulário
+    setNome("");
+    setEmail("");
+    setSexo("");
+    setEscolaridade("");
+    setTelefone("");
+    setErro(""); // Limpa a mensagem de erro
   };
 
   return (
     <div>
+      <Header />
       <h2>Formulário de Contato</h2>
 
       <form onSubmit={handleSubmit}>
-        <h3> Digite seu nome: </h3>
+        <h3>Digite seu nome:</h3>
         <input
           type="text"
           value={nome}
@@ -34,11 +56,7 @@ function Contato() {
           placeholder="Digite seu nome"
           required
         />
-        <button type="button" onClick={() => setNome("")}>
-          {" "}
-          Limpar{" "}
-        </button>
-        <p>Seu nome: {nome}</p>
+      
 
         <h3>Digite seu e-mail:</h3>
         <input
@@ -48,7 +66,7 @@ function Contato() {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        {erro && <p style={{ color: "red" }}>{erro}</p>}
+        {erro && <p className="error">{erro}</p>}
 
         <h3>Sexo:</h3>
         {["Feminino", "Masculino"].map((item) => (
@@ -87,19 +105,8 @@ function Contato() {
           required
         />
 
-        <h3>Opção:</h3>
-        <select
-          value={opcao}
-          onChange={(e) => setOpcao(e.target.value)}
-          required
-        >
-          <option value="">Escolha uma opção: </option>
-          <option value="Opcao 1">Opção 1</option>
-          <option value="Opcao 2">Opção 2</option>
-          <option value="Opcao 3">Opção 3</option>
-        </select>
-
-        <button type="submit">Enviar</button>
+        
+        <button className="btn" type="submit">Enviar</button>
       </form>
     </div>
   );

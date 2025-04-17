@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 // Style
 import "./home.css";
 //.
-import img from "/peperoni.png";
 
 // Componentes
 import Header from "../components/header/Header";
@@ -15,6 +15,7 @@ function Home() {
       <nav className="header">
         <nav className="text">
           <h3>🍕 Atenção, amantes de pizza! 🍕</h3>
+          <button className="contact"><Link to='/Contato'> Contato</Link> </button>
         </nav>
       </nav>
 
