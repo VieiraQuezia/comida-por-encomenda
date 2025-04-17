@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 // Style
 import "./home.css";
+//.
 
 // Componentes
 import Header from "../components/header/Header";
 import Navbar from "../components/navbar/Nav";
-import Pedido from "../components/Pedido/Pedido";
+
 //.
 
 function Home() {
@@ -14,12 +16,12 @@ function Home() {
       <nav className="header">
         <nav className="text">
           <h3>🍕 Atenção, amantes de pizza! 🍕</h3>
+          <button className="contact"><Link to='/Contato'> Contato</Link> </button>
         </nav>
       </nav>
 
 
       <Navbar />
-      <Pedido />
 
 
       <center>
