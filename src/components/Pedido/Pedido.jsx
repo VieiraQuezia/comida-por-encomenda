@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Pedido.css";
 
 function Pedido() {
   const [btnAtivo, setBtnAtivo] = useState(false);
