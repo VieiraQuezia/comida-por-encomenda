@@ -42,17 +42,13 @@ nav {
 }
 
 .pizza1 {
-  background-image: url('../../../public/margarita.png');
+  background-image: url('/margarita.png');
 }
 
 .pizza2 {
-  background-image: url('../../../public/peperoni.png');
+  background-image: url('/peperoni.png');
 }
 
 .pizza3 {
-  background-image: url('../../../public/quatroQueijos.png');
-<<<<<<< HEAD
-
-=======
->>>>>>> 3612c5972d31e3162b7370eacd49ae183d54d275
+  background-image: url('/quatroQueijos.png');
 }
