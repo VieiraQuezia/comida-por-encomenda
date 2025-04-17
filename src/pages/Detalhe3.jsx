@@ -11,11 +11,11 @@ function Detalhe3() {
       <div>
        
         <Comidass 
-        nome="Pizza de Pepperoni" 
+        nome="Pizza de Quatro Queijos" 
         desconto="30% off" 
         valor="R$200,00" 
-        texto="A clássica que conquista corações!
-        Nossa pizza de Pepperoni traz uma generosa camada de queijo derretido combinada com fatias crocantes e levemente picantes de pepperoni. Assada no ponto certo, ela é perfeita para quem ama sabor marcante e irresistível."/>
+        texto="Uma explosão de cremosidade e sabor!
+        Para os amantes de queijo, essa é a escolha certa. A combinação perfeita de mussarela, parmesão, gorgonzola e catupiry cria uma pizza cremosa, intensa e incrivelmente saborosa. Um verdadeiro abraço em forma de fatia."/>
         <Pedido/>
         {/* <Footer/> */}
       </div>
