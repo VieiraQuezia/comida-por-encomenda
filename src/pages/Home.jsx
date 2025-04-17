@@ -1,7 +1,5 @@
 // Style
 import "./home.css";
-//.
-import img from "/peperoni.png";
 
 // Componentes
 import Header from "../components/header/Header";
