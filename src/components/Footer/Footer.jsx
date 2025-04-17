@@ -92,7 +92,7 @@ function Footer () {
 
             <section className="integrantes"> 
                 <section> 
-                    <h4>Ana Beatriz F. Pereira<br /> Guilherme Gabriel Santana <br /> Hayeska L. A. Machado <br /> Juan M. O. Lopes <br /> Lucas Aguiar P. Marin <br /> Quezia Amaral Vieira </h4>
+                    <h4>Ana Beatriz F. Pereira<br /> Guilherme Gabriel Santana <br /> Hayeska L. A. Machado <br /> Juan M. O. Lopes <br /> Leonardo Mori Vicente <br /> Lucas Aguiar P. Marin <br /> Quezia Amaral Vieira </h4>
                   
                 </section>
 
