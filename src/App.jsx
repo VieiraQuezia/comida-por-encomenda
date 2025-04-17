@@ -5,7 +5,6 @@ import Detalhe1 from "./pages/Detalhe1";
 import Detalhe2 from "./pages/Detalhe2";
 import Detalhe3 from "./pages/Detalhe3";
 import Contato from "./pages/Contato";
-import Sobre from "./pages/Sobre";
 import Footer from "./components/Footer/Footer";
 
 
@@ -18,7 +17,6 @@ function App() {
         <Route path="/Detalhe_2" element={<Detalhe2/>} />
         <Route path="/Detalhe_3" element={<Detalhe3/> } />
         <Route path="/Contato" element={<Contato/>} />
-        <Route path="/Sobre Nós" element={<Sobre />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
