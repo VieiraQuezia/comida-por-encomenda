@@ -1,14 +1,24 @@
 import { useState } from "react";
-import './contato.css'; // Importe o CSS para estilização
+import "./contato.css"; // Importe o CSS para estilização
 import Header from "../components/header/Header";
 
 function Contato() {
-  const [nome, setNome] = useState(localStorage.getItem("nome") || "");
-  const [email, setEmail] = useState(localStorage.getItem("email") || "");
-  const [erro, setErro] = useState("");
-  const [sexo, setSexo] = useState("");
-  const [escolaridade, setEscolaridade] = useState("");
-  const [telefone, setTelefone] = useState("");
+  const [nome, setNome] = useState(() =>
+    JSON.parse(localStorage.getItem("nome") || "")
+  );
+  const [email, setEmail] = useState(() =>
+    JSON.parse(localStorage.getItem("email") || "")
+  );
+  const [erro, setErro] = useState();
+  const [sexo, setSexo] = useState(() =>
+    JSON.parse(localStorage.getItem("sexo") || "")
+  );
+  const [escolaridade, setEscolaridade] = useState(() =>
+    JSON.parse(localStorage.getItem("escolaridade") || "")
+  );
+  const [telefone, setTelefone] = useState(() =>
+    JSON.parse(localStorage.getItem("telefone") || "")
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,17 +27,12 @@ function Contato() {
       return;
     }
 
-    // Cria um objeto com os dados do formulário
-    const dadosFormulario = {
-      nome,
-      email,
-      sexo,
-      escolaridade,
-      telefone,
-    };
-
     // Salva os dados no localStorage
-    localStorage.setItem("dadosContato", JSON.stringify(dadosFormulario));
+    localStorage.setItem("nome", JSON.stringify(nome));
+    localStorage.setItem("email", JSON.stringify(email));
+    localStorage.setItem("sexo", JSON.stringify(sexo));
+    localStorage.setItem("escolaridade", JSON.stringify(escolaridade));
+    localStorage.setItem("telefone", JSON.stringify(telefone));
 
     alert(
       `Formulário enviado!`
@@ -56,7 +61,6 @@ function Contato() {
           placeholder="Digite seu nome"
           required
         />
-      
 
         <h3>Digite seu e-mail:</h3>
         <input
@@ -98,15 +102,16 @@ function Contato() {
 
         <h3>Telefone:</h3>
         <input
-          type="tel"
+          type="number"
           placeholder="Digite seu telefone"
           value={telefone}
           onChange={(e) => setTelefone(e.target.value)}
           required
         />
 
-        
-        <button className="btn" type="submit">Enviar</button>
+        <button className="btn" type="submit">
+          Enviar
+        </button>
       </form>
     </div>
   );
