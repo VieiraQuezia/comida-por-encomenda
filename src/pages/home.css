@@ -1,6 +1,7 @@
 /* Header Box */
 body {
   background-color: #f5efef;
+  overflow-x: hidden;
 }
 
 .historia {
