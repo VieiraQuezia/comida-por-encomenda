@@ -4,7 +4,7 @@ function Comidass(props) {
 
 return (
   <>
-    <div className="margherita">
+    <div className="bloco">
       
         <h2>{props.nome}</h2>
         <h1>{props.desconto}</h1>
