@@ -3,21 +3,27 @@ import "./Nav.css";
 function Navbar() {
   return (
     <nav>
-      <a href="/#Detalhe1" className="pizza1">
-        Destinos
-      </a>
-      <a href="#Detalhe2" className="pizza2">
-        Sobre Nós
-      </a>
-      <a href="#Detalhe3" className="pizza3">
-        Contato
-      </a>
-      <a href="#Contato" className="contato">
-        Contato
-      </a>
-      <a href="#Sobre" className="sobre">
-        Contato
-      </a>
+      <div>
+        <a href="/#Detalhe1" className="pizza-link pizza1">
+          Pizza de Margarita
+        </a>
+        <h2>Pizza de Margarita</h2>
+        <p>Uma deliciosa pizza com molho de tomate, mussarela e manjericão fresco.</p>
+      </div>
+      <div>
+        <a href="#Detalhe2" className="pizza-link pizza2">
+          Pizza de Pepperoni
+        </a>
+        <h2>Pizza de Pepperoni</h2>
+        <p>Clássica pizza com molho de tomate, mussarela e fatias de pepperoni.</p>
+      </div>
+      <div>
+        <a href="#Detalhe3" className="pizza-link pizza3">
+          Pizza de Quatro Queijos
+        </a>
+        <h2>Pizza de Quatro Queijos</h2>
+        <p>Uma combinação irresistível de mussarela, parmesão, gorgonzola e provolone.</p>
+      </div>
     </nav>
   );
 }
