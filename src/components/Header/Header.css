@@ -4,14 +4,18 @@ header{
     width: auto;
 padding: 1%;   
 background-color: #92170b;
+top: 0%;
+position: fixed;
+width: 100%;
 }
 
 .poetsen-one-regular {
+    color: #f4d8a1;
+    font-size: 5vw;
     font-family: "Poetsen One", sans-serif;
     font-style: normal;
     text-decoration: none;
-color: #f4d8a1;
-font-weight: 3.5vw;
+    font-weight: 3.5vw; 
   }
   
 
