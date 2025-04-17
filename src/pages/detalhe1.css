@@ -1,6 +1,6 @@
 body {
-  background-image: url(/Margherita.png);
+  background-image: url(/fundoMargherita.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
 }

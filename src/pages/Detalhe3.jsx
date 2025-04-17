@@ -1,5 +1,6 @@
 import Comidass from "../components/comidass";
 import Header from "../components/Header/Header"
+import Pedido from "../components/Pedido/Pedido";
 // import Footer from "../components/Footer/Footer"
 import "./detalhe3.css"
 
@@ -13,7 +14,9 @@ function Detalhe3() {
         nome="Pizza de Pepperoni" 
         desconto="30% off" 
         valor="R$200,00" 
-        texto="A margherita ou marguerita é um tipo de pizza tradicional de Nápoles, na Itália."/>
+        texto="A clássica que conquista corações!
+        Nossa pizza de Pepperoni traz uma generosa camada de queijo derretido combinada com fatias crocantes e levemente picantes de pepperoni. Assada no ponto certo, ela é perfeita para quem ama sabor marcante e irresistível."/>
+        <Pedido/>
         {/* <Footer/> */}
       </div>
       </>
