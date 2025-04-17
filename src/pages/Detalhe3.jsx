@@ -1,5 +1,5 @@
 import Comidass from "../components/comidass";
-import Header from "../components/Header/Header"
+import Header from "../components/header/Header"
 import Pedido from "../components/Pedido/Pedido";
 // import Footer from "../components/Footer/Footer"
 import "./detalhe3.css"
@@ -8,7 +8,7 @@ function Detalhe3() {
     return (
       <>
       <Header/>
-      <div>
+      <div className="detalhe3">
        
         <Comidass 
         nome="Pizza de Quatro Queijos" 

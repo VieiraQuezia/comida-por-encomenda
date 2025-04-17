@@ -1,6 +1,7 @@
-body {
+.detalhe1 {
   background-image: url(/fundoMargherita.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+
 
 }
