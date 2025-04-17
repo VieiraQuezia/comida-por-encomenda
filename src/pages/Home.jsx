@@ -6,27 +6,27 @@ import img from "/peperoni.png";
 // Componentes
 import Header from "../components/header/Header";
 import Navbar from "../components/navbar/Nav";
+import Pedido from "../components/Pedido/Pedido";
 //.
 
 function Home() {
   return (
     <>
-      <Header />
+    <Header />
       <nav className="header">
         <nav className="text">
           <h3>🍕 Atenção, amantes de pizza! 🍕</h3>
-          
         </nav>
       </nav>
 
-      
+
       <Navbar />
+      <Pedido />
 
 
       <center>
         <main>
           <article className="historia">
-            <img src={img} alt="" />
             <div className="hist">
               <h2>Conheça a História da Pizzaria Manoel</h2>
               <p>

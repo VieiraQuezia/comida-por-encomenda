@@ -1,0 +1,26 @@
+.margherita {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 50%;
+  height: 40%;
+  h1 {
+    font-size: 85px;
+    color: bisque;
+    margin-top: -6%;
+    margin-bottom: -6%;
+    background-color: green;
+    border-radius: 100px;
+    padding-left: 5%;
+    margin-left: -5%;
+  }
+  h2 {
+    font-size: 60px;
+    color: bisque;
+  }
+  p {
+    color: bisque;
+    margin-top: -6%;
+  }
+}
