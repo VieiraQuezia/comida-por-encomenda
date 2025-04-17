@@ -6,6 +6,10 @@ body {
 .contact{
     background-color: #92170b;
     padding: 3% 5% 3% 5%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 
     a{
         text-decoration: none;

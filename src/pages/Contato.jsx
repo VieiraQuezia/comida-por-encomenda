@@ -30,7 +30,7 @@ function Contato() {
     localStorage.setItem("dadosContato", JSON.stringify(dadosFormulario));
 
     alert(
-      `Formulário enviado!\nNome: ${nome}\nEmail: ${email}\nSexo: ${sexo}\nEscolaridade: ${escolaridade}`
+      `Formulário enviado!`
     );
 
     // Limpa todos os campos do formulário
