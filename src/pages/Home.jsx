@@ -6,6 +6,7 @@ import img from "/peperoni.png";
 // Componentes
 import Header from "../components/header/Header";
 import Navbar from "../components/navbar/Nav";
+import Pedido from "../components/Pedido/Pedido";
 //.
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
 
 
       <Navbar />
+      <Pedido />
 
 
       <center>

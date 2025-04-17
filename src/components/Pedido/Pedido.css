@@ -1,0 +1,80 @@
+.fazer-pedido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #373839;
+    border-radius: 8px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.fazer-pedido button {
+    padding: 12px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.fazer-pedido button:hover {
+    background-color: #0056b3;
+}
+
+.fazer-pedido form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    background-color: #3c3f41;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fazer-pedido form label {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.fazer-pedido form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.fazer-pedido form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fazer-pedido form button:hover {
+    background-color: #218838;
+}
+
+.fazer-pedido p {
+    font-size: 16px;
+    color: #28a745;
+    margin-top: 25px;
+    text-align: center;
+}
