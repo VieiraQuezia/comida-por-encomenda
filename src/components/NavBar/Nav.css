@@ -8,6 +8,7 @@ nav {
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 20px;
+  margin-bottom: 20px;
   justify-content: space-around;
 }
 
@@ -20,13 +21,13 @@ nav {
 
 .pizza-item h3 {
   font-size: 20px;
-  color: #333;
+  color: #8d8d8d;
   margin: 10px 0 5px;
 }
 
 .pizza-item p {
   font-size: 14px;
-  color: #666;
+  color: #cccbcb;
   margin: 0;
 }
 

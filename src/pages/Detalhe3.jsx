@@ -1,10 +1,26 @@
-function detalhe() {
+import Comidass from "../components/comidass";
+import Header from "../components/Header/Header"
+import Pedido from "../components/Pedido/Pedido";
+// import Footer from "../components/Footer/Footer"
+import "./detalhe3.css"
+
+function Detalhe3() {
     return (
+      <>
+      <Header/>
       <div>
-        <h1>Detalhe</h1>
-        <p>Detalhes do produto...</p>
+       
+        <Comidass 
+        nome="Pizza de Pepperoni" 
+        desconto="30% off" 
+        valor="R$200,00" 
+        texto="A clássica que conquista corações!
+        Nossa pizza de Pepperoni traz uma generosa camada de queijo derretido combinada com fatias crocantes e levemente picantes de pepperoni. Assada no ponto certo, ela é perfeita para quem ama sabor marcante e irresistível."/>
+        <Pedido/>
+        {/* <Footer/> */}
       </div>
+      </>
     );
       
   }
-  export default detalhe;
+  export default Detalhe3;

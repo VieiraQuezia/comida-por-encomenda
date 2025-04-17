@@ -3,8 +3,8 @@ import './contato.css'; // Importe o CSS para estilização
 import Header from "../components/header/Header";
 
 function Contato() {
-  const [nome, setNome] = useState("");
-  const [email, setEmail] = useState("");
+  const [nome, setNome] = useState(localStorage.getItem("nome") || "");
+  const [email, setEmail] = useState(localStorage.getItem("email") || "");
   const [erro, setErro] = useState("");
   const [sexo, setSexo] = useState("");
   const [escolaridade, setEscolaridade] = useState("");
