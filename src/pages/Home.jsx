@@ -11,11 +11,10 @@ import Navbar from "../components/navbar/Nav";
 function Home() {
   return (
     <>
-      <Header />
+    <Header />
       <nav className="header">
         <nav className="text">
           <h3>🍕 Atenção, amantes de pizza! 🍕</h3>
-          
         </nav>
       </nav>
 
