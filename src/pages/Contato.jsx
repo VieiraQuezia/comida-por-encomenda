@@ -87,16 +87,16 @@ function Contato() {
           required
         />
 
-        <h3> Opcão: </h3>
+        <h3>Opção:</h3>
         <select
           value={opcao}
           onChange={(e) => setOpcao(e.target.value)}
           required
         >
           <option value="">Escolha uma opção: </option>
-          <option value="Suporte">Opção 1</option>
-          <option value="Financeiro">Opção 2</option>
-          <option value="Outros">Opção 3</option>
+          <option value="Opcao 1">Opção 1</option>
+          <option value="Opcao 2">Opção 2</option>
+          <option value="Opcao 3">Opção 3</option>
         </select>
 
         <button type="submit">Enviar</button>
