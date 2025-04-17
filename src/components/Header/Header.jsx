@@ -13,7 +13,7 @@ function Header() {
             <header >
                 
 
-                <h1><Link className="" to='/'>Pizzaria Manoel</Link></h1>
+                <h1><Link className="poetsen-one-regular" to='/'>Pizzaria Manoel</Link></h1>
                 
            
             </header>
