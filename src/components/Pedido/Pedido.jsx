@@ -58,10 +58,10 @@ function Pedido() {
           <label>
             Telefone:
             <input
-              type="tel"
+              type="number"
               name="tel"
-              min={11}
-              max={11}
+              minValue={11}
+              maxValue={11}
               placeholder="Digite o número do seu telefone"
               value={infoPedido.tel}
               onChange={addInfo}
