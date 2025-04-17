@@ -1,13 +1,17 @@
 import { useState } from "react";
 
 function Contato() {
-  const [nome, setNome] = useState("");
-  const [email, setEmail] = useState("");
+  const [nome, setNome] = useState(localStorage.getItem("nome") || "");
+  const [email, setEmail] = useState(localStorage.getItem("email") || "");
   const [erro, setErro] = useState("");
-  const [sexo, setSexo] = useState("");
-  const [escolaridade, setEscolaridade] = useState("");
-  const [telefone, setTelefone] = useState("");
-  const [opcao, setOpcao] = useState("");
+  const [sexo, setSexo] = useState(localStorage.getItem("sexo") || "");
+  const [escolaridade, setEscolaridade] = useState(
+    localStorage.getItem("escolaridade") || ""
+  );
+  const [telefone, setTelefone] = useState(
+    localStorage.getItem("telefone") || ""
+  );
+  const [opcao, setOpcao] = useState(localStorage.getItem("opcao") || "");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,6 +23,17 @@ function Contato() {
       `Formulário enviado!\nNome: ${nome}\nEmail: ${email}\nSexo: ${sexo}\nEscolaridade: ${escolaridade}`
     );
     setErro("");
+    localStorage.setItem("nome", nome);
+
+    localStorage.setItem("email", email);
+
+    localStorage.setItem("sexo", sexo);
+
+    localStorage.setItem("escolaridade", escolaridade);
+
+    localStorage.setItem("telefone", telefone);
+
+    localStorage.setItem("opcao", opcao);
   };
 
   return (
@@ -35,10 +50,9 @@ function Contato() {
           required
         />
         <button type="button" onClick={() => setNome("")}>
-          {" "}
-          Limpar{" "}
+          Limpar
         </button>
-        <p>Seu nome: {nome}</p>
+        
 
         <h3>Digite seu e-mail:</h3>
         <input
@@ -94,9 +108,9 @@ function Contato() {
           required
         >
           <option value="">Escolha uma opção: </option>
-          <option value="Opcao 1">Opção 1</option>
-          <option value="Opcao 2">Opção 2</option>
-          <option value="Opcao 3">Opção 3</option>
+          <option value="Opcao 1">Pepperoni</option>
+          <option value="Opcao 2">Quatro queijos</option>
+          <option value="Opcao 3">Margherita</option>
         </select>
 
         <button type="submit">Enviar</button>
