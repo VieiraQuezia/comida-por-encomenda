@@ -1,21 +1,4 @@
-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 20vw;
-  align-items: center;
-  padding: 10px;
-  margin-left: 15vw;
-}
 
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ff6347;
 }
 
 .pizza-link {
@@ -30,15 +13,14 @@ nav a:hover {
 
 .pizza1 {
   background-image: url('../../../public/margarita.png');
-  font-size: 40px;
+
 }
 
 .pizza2 {
   background-image: url('../../../public/peperoni.png');
-  font-size: 40px;
+
 }
 
 .pizza3 {
   background-image: url('../../../public/quatroQueijos.png');
-  font-size: 40px;
-}
+
