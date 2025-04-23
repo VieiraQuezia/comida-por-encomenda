@@ -42,6 +42,7 @@ function Pedido() {
       </button>
 
       {btnAtivo && (
+        
         <form onSubmit={handleSubmit}>
           <label>
             Digite seu nome:

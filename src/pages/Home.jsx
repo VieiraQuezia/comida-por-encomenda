@@ -16,7 +16,7 @@ function Home() {
       <nav className="header">
         <nav className="text">
           <h3>🍕 Atenção, amantes de pizza! 🍕</h3>
-          <button className="contact"><Link to='/Contato'> Contato</Link> </button>
+          <Link className="contact" to='/Contato'>  <button > Contato </button> </Link>
         </nav>
       </nav>
 
